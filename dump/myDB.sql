@@ -1,14 +1,15 @@
 SET time_zone = "+08:00";
 
+CREATE TABLE `producttb` (
+  `id` int(11) NOT NULL,
+  `product_name` varchar(25) NOT NULL,
+  `product_price` float DEFAULT NULL,
+  `product_image` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-CREATE TABLE `Person` (
-  `id` int NOT NULL,
-  `name` varchar(20) NOT NULL,
-  `age` int
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-
-INSERT INTO `Person` (`id`, `name`,`age`) VALUES
-(1, 'William',30),
-(2, 'Marc',17),
-(3, 'John',55);
+INSERT INTO `producttb` (`id`, `product_name`, `product_price`, `product_image`) VALUES
+(5, 'Apple MacBook Pro', 1799, '/upload/product1.png'),
+(6, 'Sony E7 Headphones', 147, '/upload/product1.png'),
+(7, 'Sony Xperia Z4', 459, '/upload/product1.png'),
+(8, 'Samsung Galaxy A50', 278, '/upload/product1.png');
