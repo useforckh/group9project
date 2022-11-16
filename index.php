@@ -68,7 +68,7 @@
                 $_SESSION['username'] = $username;
 
                 // Redirect to user to page
-                header('location: welcome.php');
+                header('location: main.php');
               } else {
                 // Display an error for passord mismatch
                 $password_err = 'Invalid password';
