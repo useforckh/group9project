@@ -5,7 +5,7 @@
 <body>
     <table border="0">
         <tr>
-        <form action="error.php" method="post">
+        <form action="database.php" method="post">
                 <td>User ID:</td>
                 <td><input type="text" name="user_id"></td>
             </tr>
