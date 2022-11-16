@@ -13,11 +13,11 @@ class CreateDb
 
         // class constructor
     public function __construct(
-        $dbname = "Newdb",
+        $dbname = "myDb",
         $tablename = "Productdb",
-        $servername = "localhost",
-        $username = "root",
-        $password = ""
+        $servername = "db",
+        $username = "user",
+        $password = "test"
     )
     {
       $this->dbname = $dbname;
@@ -27,7 +27,7 @@ class CreateDb
       $this->password = $password;
 
       // create connection
-        $this->con = mysqli_connect($servername, $username, $password);
+        $this->con = mysqli_connect('db', 'user', 'test', "myDb");
 
         // Check connection
         if (!$this->con){
@@ -70,7 +70,6 @@ class CreateDb
         }
     }
 }
-
 
 
 
