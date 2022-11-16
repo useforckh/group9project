@@ -10,6 +10,6 @@ CREATE TABLE `Producttb` (
 
 INSERT INTO `Producttb` (`id`, `product_name`, `product_price`, `product_image`) VALUES
 (5, 'Apple MacBook Pro', 1799, '/upload/product1.png'),
-(6, 'Sony E7 Headphones', 147, '/upload/product1.png'),
-(7, 'Sony Xperia Z4', 459, '/upload/product1.png'),
-(8, 'Samsung Galaxy A50', 278, '/upload/product1.png');
+(6, 'Sony E7 Headphones', 147, '/upload/product2.png'),
+(7, 'Sony Xperia Z4', 459, '/upload/product3.png'),
+(8, 'Samsung Galaxy A50', 278, '/upload/product4.png');
