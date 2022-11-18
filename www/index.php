@@ -29,7 +29,7 @@
 				<h2 class="display-5">Username:<?php echo $_SESSION['username']; ?></h2>
 			</div>
 
-			<a href="clear.php" class="btn btn-block btn-outline-warning">Reset Password</a>
+			<a href="resetpw.php" class="btn btn-block btn-outline-warning">Reset Password</a>
 			<a href="logout.php" class="btn btn-block btn-outline-danger">Sign Out</a>
 			<a href="main.php" class="btn btn-block btn-outline-info">Go shopping</a>
 		</section>
