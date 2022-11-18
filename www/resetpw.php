@@ -104,7 +104,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
                 </div>
                 <div class="form-group">
                     <input type="submit" class="btn btn-block btn-primary" value="Submit">
-                    <a class="btn btn-block btn-link bg-light" href="welcome.php">Cancel</a>
+                    <a class="btn btn-block btn-link bg-light" href="index.php">Cancel</a>
                 </div>
             </form>
         </section>
