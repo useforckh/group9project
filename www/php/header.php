@@ -33,11 +33,17 @@
                         }
 
                         ?>
+
+                    </h5>
+                </a>
+                <a href="logout.php" class="nav-item nav-link active">
+                    <h5 class="px-5 ">
+                        <i></i> Sign Out
                     </h5>
                 </a>
             </div>
         </div>
-
+                
     </nav>
 </header>
 
