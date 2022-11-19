@@ -14,12 +14,16 @@ INSERT INTO `Producttb` (`id`, `product_name`, `product_price`, `product_image`)
 (7, 'Sony Xperia Z4', 459, '/upload/product3.png'),
 (8, 'Samsung Galaxy A50', 278, '/upload/product4.png');
 
+
 CREATE TABLE 'users' (
-    'id' INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    'id' int(11) NOT ,
     'username' VARCHAR(50) NOT NULL UNIQUE,
     'password' VARCHAR(255) NOT NULL,
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 
 
 
