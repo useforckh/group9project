@@ -26,5 +26,4 @@ ALTER TABLE `users`
   MODIFY `id` int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT, AUTO_INCREMENT=1;
 
 
-INSERT INTO `users` (`id`, `username`, `password`, `created_at`) VALUES
-(1, 'abc', '$2y$10$trdS/C/WF1S0aH1gHEmwy.HvlbRIhlpR.psOs676vm0F5xXuOJ.Yi', '2022-11-18 18:30:49');
+
