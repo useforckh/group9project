@@ -33,6 +33,7 @@ function component($productname, $productprice, $productimg, $productid){
                 </form>
             </div>
     ";
+    echo $element;
 }
 
 function cartElement($productimg, $productname, $productprice, $productid){
@@ -63,6 +64,7 @@ function cartElement($productimg, $productname, $productprice, $productid){
                 </form>
     
     ";
+    echo  $element;
 }
 
 
