@@ -14,12 +14,13 @@ INSERT INTO `Producttb` (`id`, `product_name`, `product_price`, `product_image`)
 (7, 'Sony Xperia Z4', 459, '/upload/product3.png'),
 (8, 'Samsung Galaxy A50', 278, '/upload/product4.png');
 
-CREATE TABLE `users` (
-  `id` int NOT NULL,
-  `username` varchar(50) NOT NULL,
-  `password` varchar(255) NOT NULL,
-  `created_at` datetime DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE 'users' (
+    'id' INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    'username' VARCHAR(50) NOT NULL UNIQUE,
+    'password' VARCHAR(255) NOT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
 
 INSERT INTO `users` (`id`, `username`, `password`, `created_at`) VALUES
 (1, 'abc', '$2y$10$trdS/C/WF1S0aH1gHEmwy.HvlbRIhlpR.psOs676vm0F5xXuOJ.Yi', '2022-11-18 18:30:49');
