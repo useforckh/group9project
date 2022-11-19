@@ -19,7 +19,7 @@ CREATE TABLE 'users' (
     'username' VARCHAR(50) NOT NULL UNIQUE,
     'password' VARCHAR(255) NOT NULL,
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
-);
+)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 
 INSERT INTO `users` (`id`, `username`, `password`, `created_at`) VALUES
