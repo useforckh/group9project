@@ -18,6 +18,8 @@ services:
             MYSQL_DATABASE: myDb
             MYSQL_USER: user
             MYSQL_PASSWORD: test
+            ST_MONITOR_MYSQL_DB_USER: spm-user
+            ST_MONITOR_MYSQL_DB_PASSWORD: spm-password
         ports: 
             - "33306:3306"        
         volumes:
@@ -36,5 +38,26 @@ services:
             PMA_PASSWORD: "test"
         depends_on:
             - db
+    st-agent:
+        image: sematext/agent:latest
+        privileged: true
+        environment:
+        - INFRA_TOKEN=c9fc7726-ad69-426c-a797-8e747e23c129
+        - SERVER_BASE_URL=https://spm-receiver.sematext.com
+        - LOGS_RECEIVER_URL=https://logsene-receiver.sematext.com
+        - EVENT_RECEIVER_URL=https://event-receiver.sematext.com
+        - COMMAND_SERVER_URL=https://command.sematext.com
+        cap_add:
+        - SYS_ADMIN
+        restart: always
+        volumes:
+        - /:/hostfs:ro
+        - /etc/passwd:/etc/passwd:ro
+        - /etc/group:/etc/group:ro
+        - /var/run/:/var/run
+        - /sys/kernel/debug:/sys/kernel/debug
+        - /sys:/host/sys:ro
+        - /dev:/hostfs/dev:ro
+        - /var/run/docker.sock:/var/run/docker.sock:ro
 volumes:
     persistent:
