@@ -11,13 +11,13 @@ services:
                 - db
     db:
         image: mysql
-        container_name: ${container_name}
+        container_name: db
         command: --default-authentication-plugin=mysql_native_password
         environment:
             MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
             MYSQL_DATABASE: ${MYSQL_DATABASE}
-            MYSQL_USER: ${MYSQL_USER}" 
-            MYSQL_PASSWORD: ${MYSQL_PASSWORD} 
+            MYSQL_USER: ${MYSQL_USER}
+            MYSQL_PASSWORD: ${MYSQL_PASSWORD}
             ST_MONITOR_MYSQL_DB_USER: spm-user
             ST_MONITOR_MYSQL_DB_PASSWORD: spm-password
         ports: 
